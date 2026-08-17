@@ -21,6 +21,10 @@
 #content .form-row .selector-chooser {
     display: block;
 }
+.selector-chooser button {
+    padding: 20px;
+    background-position: center !important;
+}
 .selector-chooser a {
     padding: 10px;
     background-position: center !important;
@@ -91,6 +95,8 @@
 .selector.stacked ul.selector-chooser li {
     float: left;
 }
+button.selector-add, button.selector-remove,
+button.selector-add:hover, button.selector-remove:hover,
 a.selector-add, a.selector-remove {
     display: block;
     width: 16px; height: 16px;
@@ -98,15 +104,19 @@ a.selector-add, a.selector-remove {
     background-position: 50% 0;
     background-repeat: no-repeat;
 }
+button.selector-add,
 a.selector-add:link, a.selector-add:visited {
     background-image: url('../img/icons/icon-selector_add-m2m_horizontal.png');
 }
+button.selector-add:hover, button.selector-add:active,
 a.selector-add:hover, a.selector-add:active {
     background-image: url('../img/icons/icon-selector_add-m2m_horizontal-hover.png');
 }
+button.selector-remove,
 a.selector-remove:link, a.selector-remove:visited {
     background-image: url('../img/icons/icon-selector_remove-m2m_horizontal.png');
 }
+button.selector-remove:hover, button.selector-remove:active,
 a.selector-remove:hover, a.selector-remove:active {
     background-image: url('../img/icons/icon-selector_remove-m2m_horizontal-hover.png');
 }
