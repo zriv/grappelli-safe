@@ -29,6 +29,26 @@
     padding: 10px;
     background-position: center !important;
 }
+
+.selector p.selector-filter {
+	float: none;
+	margin: 32px 0px 0px 0px;
+}
+
+.selector p.helptext {
+	display: none;
+}
+
+.selector div.selector-available-title label,
+.selector div.selector-chosen-title label {
+    padding: 3px 5px 6px 7px;
+    font-size: 12px; line-height: 13px; font-weight: bold;
+    border: none;
+    border-bottom: 1px solid #d0d0d0;
+    background: transparent;
+    width: auto;
+}
+
 .selector h2, .inline-group .selector h2,
 .inline-related fieldset .selector-available h2, .inline-related fieldset .selector-chosen h2 {
     padding: 7px 5px 6px 7px;
