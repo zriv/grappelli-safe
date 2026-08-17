@@ -33,6 +33,7 @@
     /*  Modules
     ------------------------------------------------------------------------------------------------------ */
     
+    summary h2,
     .module > h2, .module caption, 
     .inline-group h2,
     .inline-related h2 {
@@ -103,10 +104,14 @@
     /*  Change-Forms (Fieldsets, Inline-Group, Inline-Stacked)
     ------------------------------------------------------------------------------------------------------ */
     
+    fieldset.collapse h2.fieldset-heading,
     fieldset.collapse-closed h2.collapse-toggle {
         background-image: url('../img/icons/icon_fieldset_collapse-closed.png'),
         -webkit-gradient(linear, left top, left bottom, from(#e0f0f5), to(#d8e8ed));
     }
+
+    fieldset.collapse h2.fieldset-heading:hover,
+    fieldset.collapse details:open h2.fieldset-heading,
     fieldset.collapse-closed h2.collapse-toggle:hover, 
     fieldset.collapse-open h2.collapse-toggle {
         background-image: url('../img/icons/icon_fieldset_collapse-open.png'),

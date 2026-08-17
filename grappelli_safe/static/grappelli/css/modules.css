@@ -4,6 +4,7 @@
 /*  Basic Settings
 ------------------------------------------------------------------------------------------------------ */
 
+summary h2,
 .module > h2, .module caption, 
 .inline-group h2,
 .inline-related h2 {
@@ -61,6 +62,11 @@
 /*  Collapsible Basics
 ------------------------------------------------------------------------------------------------------ */
 
+summary::marker {
+    content: "";
+}
+
+h2.fieldset-heading,
 h2.collapse-toggle, 
 h3.collapse-toggle, 
 h4.collapse-toggle {
@@ -72,10 +78,12 @@ h4.collapse-toggle {
 .collapse-toggle .inline-deletelink {
     display: none;
 }
+details:not(:open) h2.fieldset-heading:not(:hover),
 .collapse-closed > .collapse-toggle {
     -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;
     background-position: 0 100%;
 }
+fieldset.collapse details:not(:open) h2.fieldset-heading,
 fieldset.collapse-closed > .collapse-toggle, 
 .inline-related.collapse-closed > .collapse-toggle {
     border-bottom: none;
@@ -102,6 +110,7 @@ fieldset.collapse-closed div {
 
 /*  H2 in Fieldsets ................................................... */
 
+fieldset.module h2,
 fieldset.module > h2 {
     margin: 0; padding-left: 15px;
     border-bottom: 1px solid #d4d4d4;
@@ -112,6 +121,8 @@ fieldset.collapse-closed h2.collapse-toggle {
     background-color: #e0f0f5;
     background-image: url('../img/icons/icon_fieldset_collapse-closed.png');
 }
+
+fieldset details open summary h2.fieldset-heading,
 fieldset.collapse-closed h2.collapse-toggle:hover, 
 fieldset.collapse-open h2.collapse-toggle {
     background-color: #c0e1ec;
