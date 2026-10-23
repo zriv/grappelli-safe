@@ -59,6 +59,22 @@ body.filebrowser.popup #header {
 }
 
 
+/*  Logout Button ................................................... */
+
+#header #logout-form {
+  margin: -5px 0px -6px 0px;
+}
+#logout-form button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  color: #309bbf;
+}
+#logout-form button:hover, #logout-form button:active {
+    color: #ddd;
+}
+
 
 /*  Branding, Bookmarks & User-Tools
 ------------------------------------------------------------------------------------------------------ */

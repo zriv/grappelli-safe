@@ -27,11 +27,13 @@
         <!-- Logout -->
         {% url "admin:logout" as logout_url %}
         {% if logout_url %}
-        <li><a href="{{ logout_url }}">
+        <li><form id="logout-form" method="post" action="{{ logout_url }}">
         {% else %}
-        <li><a href="{{ root_path }}logout/">
+        <li><form id="logout-form" method="post" action="{{ root_path }}logout/">
         {% endif %}
-        {% trans 'Log out' %}</a></li>
+          {% csrf_token %}
+          <button type="submit">{% translate "Log out" %}</button>
+        </form></li>
         {% endblock %}
     </ul>
     {% endif %}
